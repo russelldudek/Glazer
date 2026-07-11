@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Reliability Interlock mark">
+  <rect width="64" height="64" rx="14" fill="#171514"/>
+  <path d="M12 20h16v8H20v8h8v8H12zM52 20H36v8h8v8h-8v8h16z" fill="#E8A653"/>
+  <rect x="26" y="26" width="12" height="12" rx="3" fill="#F6F0E8"/>
+</svg>

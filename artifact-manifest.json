@@ -1,0 +1,30 @@
+{
+  "routes": [
+    "index.html",
+    "resume.html",
+    "cover-letter.html",
+    "interview-brief.html",
+    "120-day-plan.html",
+    "reliability-contract.html"
+  ],
+  "source": [
+    "styles.css",
+    "documents.css",
+    "base.css",
+    "app.js",
+    "assets/reliability-mark.svg",
+    "campaign-metadata.json",
+    "brand-intelligence.md",
+    "alignment-audit.md",
+    "campaign-completion-audit.md",
+    "audit-evidence.json",
+    "README.md"
+  ],
+  "pdfs": [
+    "docs/Russell-Dudek-SGWS-AIML-Resume.pdf",
+    "docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf",
+    "docs/Russell-Dudek-SGWS-AIML-Interview-Brief.pdf",
+    "docs/Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf",
+    "docs/Model-Reliability-Contract.pdf"
+  ]
+}

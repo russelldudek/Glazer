@@ -1,0 +1,49 @@
+/* Document and print system */
+.doc-body{background:#e9e5df;padding:26px 0;color:var(--ink)}
+.doc-nav{width:min(8.5in,calc(100% - 28px));margin:0 auto 10px;display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;align-items:center}
+.doc-nav .button{min-height:38px;padding:0 13px;font-size:.78rem}
+.doc-nav .button.alt{background:#fff;color:var(--ink);border-color:#aeb5b8}
+.paper-page{width:8.5in;min-height:11in;margin:0 auto 18px;background:#fff;padding:.5in .56in;box-shadow:0 12px 38px rgba(0,0,0,.14);position:relative;color:#172534}
+.doc-kicker{font-size:8.4pt;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--burg)}
+.doc-name{font-family:Georgia,'Times New Roman',serif;font-size:28pt;line-height:1.02;margin:8px 0 5px;letter-spacing:-.025em}
+.doc-title{font-size:10.8pt;font-weight:800;color:var(--burg)}
+.doc-meta{font-size:8.7pt;color:#59666f;margin-top:6px}
+.doc-rule{border:0;border-top:1px solid #cfcfc9;margin:13px 0}
+.doc-section{margin-top:12px;break-inside:avoid;page-break-inside:avoid}
+.doc-section h2{font-family:Arial,sans-serif;font-size:9pt;letter-spacing:.12em;text-transform:uppercase;color:var(--burg);font-weight:900;margin:0 0 6px}
+.doc-section h3{font-size:10.2pt;margin:0 0 4px}
+.doc-section p,.doc-section li{font-size:8.9pt;line-height:1.34}
+.doc-section ul{margin:5px 0 0;padding-left:17px}.doc-section li{margin-bottom:4px}
+.role-head{display:flex;justify-content:space-between;gap:20px;align-items:baseline;margin-top:8px;break-after:avoid}
+.role-head h3{font-size:10.3pt;margin:0}.role-head span{font-size:8.3pt;color:#647079;white-space:nowrap}
+.role-sub{font-size:8.5pt;color:var(--burg);font-weight:800;margin:2px 0 4px}
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px 12px;font-size:8.6pt}
+.cap-grid span{padding-bottom:3px;border-bottom:1px solid #e2dfda}
+.doc-cols{display:grid;grid-template-columns:1.08fr .92fr;gap:20px}
+.doc-callout{padding:10px 12px;background:#f6f1e8;border-left:3px solid var(--gold);font-size:8.8pt;line-height:1.35;break-inside:avoid}
+.page-number{position:absolute;bottom:.27in;right:.48in;font-size:7.5pt;color:#7c858b}
+.letter-body p{font-size:10pt;line-height:1.47;margin-bottom:11px}.letter-sig{margin-top:16px}.small{font-size:8.2pt!important;color:#68747c}
+.brief-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.brief-box{border:1px solid var(--line);padding:13px;break-inside:avoid}.brief-box h3{color:var(--burg);font-family:Georgia,serif;font-weight:400;font-size:13pt;margin-bottom:6px}.brief-box p,.brief-box li{font-size:8.8pt;line-height:1.32}.brief-box ul,.brief-box ol{padding-left:17px;margin:5px 0}.brief-box li{margin-bottom:3px}
+.event-table,.plan-table,.contract-table{width:100%;border-collapse:collapse;font-size:8.2pt;break-inside:avoid}.event-table th,.event-table td,.plan-table th,.plan-table td,.contract-table th,.contract-table td{border:1px solid #d4d0ca;padding:6px;vertical-align:top}.event-table th,.plan-table th,.contract-table th{background:#f6f1e8;text-align:left;color:var(--burg);font-weight:900}
+.foundation-strip{margin-top:9px;padding-top:8px;border-top:1px solid var(--line)}.foundation-grid{display:grid;grid-template-columns:1.55fr .8fr .8fr;gap:12px}.foundation-grid>div{padding:8px;background:#f7f5f1;border-top:3px solid var(--gold)}.foundation-grid h3{color:var(--burg);font-size:8.5pt;text-transform:uppercase;letter-spacing:.08em}.foundation-grid p{margin:0;font-size:7.9pt;line-height:1.25}
+.transfer-map{border:1px solid var(--line);padding:10px}.transfer-row{display:grid;grid-template-columns:.7fr 1.3fr;gap:8px;border-top:1px solid #e3e0db;padding:5px 0;font-size:8.1pt}.transfer-row:first-of-type{border-top:0}.transfer-row b{color:var(--burg)}
+.plan-phase-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}.plan-phase{border:1px solid var(--line);padding:15px;break-inside:avoid;background:#fff}.plan-phase h3{font-family:Georgia,serif;color:var(--burg);font-size:15pt;margin:4px 0 7px}.plan-phase p,.plan-phase li{font-size:8.8pt;line-height:1.33}.plan-phase ul{padding-left:17px;margin:6px 0}.plan-phase li{margin-bottom:4px}.phase-days{font-size:7.6pt;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}.plan-exit{margin-top:8px;padding:7px;background:#f6f1e8;border-left:3px solid var(--gold);font-size:8pt;font-weight:700}
+.contract-sheet{padding:.31in .46in}.contract-row{display:grid;grid-template-columns:1fr .025in 1fr;gap:10px;break-inside:avoid}.contract-gutter{background:var(--gold)}.contract-block,.contract-wide{border:1px solid var(--line);padding:10px;margin-bottom:9px;break-inside:avoid}.contract-block h3,.contract-wide h3{font-size:9.3pt;letter-spacing:.05em;text-transform:uppercase;color:var(--burg);margin:0 0 6px}.contract-block p{font-size:7.8pt;margin:4px 0 0}.write-line{height:15px;border-bottom:1px solid #aeb5b8}.compact-row .contract-block{padding:8px}.contract-table{font-size:7.5pt}.learning-table{font-size:6.7pt}.learning-table td{height:24px}.contract-boundary{font-size:7.4pt;color:#68747c;margin:4px 0 0}
+@media(max-width:980px){.paper-page{width:calc(100% - 24px);min-height:auto;padding:28px}.doc-cols,.brief-grid,.plan-phase-grid,.contract-row{grid-template-columns:1fr}.contract-gutter{height:4px}.foundation-grid{grid-template-columns:1fr}.transfer-row{grid-template-columns:1fr}.paper-page .cap-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.doc-body{padding:12px 0}.paper-page{width:calc(100% - 16px);padding:22px 18px}.doc-name{font-size:23pt}.doc-nav{justify-content:flex-start}.paper-page .cap-grid{grid-template-columns:1fr}.role-head{align-items:flex-start;flex-direction:column;gap:2px}.event-table,.plan-table,.contract-table{font-size:7.4pt}}
+@media print{
+  @page{size:Letter;margin:0}
+  body.doc-body{background:#fff;padding:0}
+  .screen-only,.doc-nav{display:none!important}
+  .paper-page{width:8.5in;height:11in;min-height:11in;margin:0;box-shadow:none;padding:.48in .55in;overflow:hidden;page-break-after:always}
+  .paper-page:last-child{page-break-after:auto}
+  .contract-doc .paper-page{padding:.30in .46in}
+  a{text-decoration:none;color:inherit}
+  .doc-section,.brief-box,.plan-phase,.contract-block,.contract-wide,table,tr{break-inside:avoid;page-break-inside:avoid}
+  h1,h2,h3{break-after:avoid;page-break-after:avoid}
+  .doc-section p,.doc-section li{orphans:2;widows:2}
+  .doc-cols{grid-template-columns:1.08fr .92fr}
+  .brief-grid,.plan-phase-grid{grid-template-columns:1fr 1fr}
+  .contract-row{grid-template-columns:1fr .025in 1fr}
+  .foundation-grid{grid-template-columns:1.55fr .8fr .8fr}
+}

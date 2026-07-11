@@ -1,0 +1,62 @@
+{
+  "campaign_repository": "russelldudek/Glazer",
+  "audited_branch": "main",
+  "rendered_viewports": [
+    {
+      "viewport": "1440x900",
+      "metrics": {"scrollWidth": 1440,"clientWidth": 1440,"scrollHeight": 6486,"headerHeight": 75,"visiblePanels": 1,"focusables": 31,"sections": 11,"navPosition": "sticky"},
+      "stateAfterLatency": "hold","panelVisible": true,"keyboardTabs": true,"mobileNav": null,"errors": []
+    },
+    {
+      "viewport": "1280x800",
+      "metrics": {"scrollWidth": 1280,"clientWidth": 1280,"scrollHeight": 6157,"headerHeight": 75,"visiblePanels": 1,"focusables": 31,"sections": 11,"navPosition": "sticky"},
+      "stateAfterLatency": "hold","panelVisible": true,"keyboardTabs": true,"mobileNav": null,"errors": []
+    },
+    {
+      "viewport": "768x1024",
+      "metrics": {"scrollWidth": 768,"clientWidth": 768,"scrollHeight": 8213,"headerHeight": 75,"visiblePanels": 1,"focusables": 31,"sections": 11,"navPosition": "sticky"},
+      "stateAfterLatency": "hold","panelVisible": true,"keyboardTabs": true,"mobileNav": true,"errors": []
+    },
+    {
+      "viewport": "390x844",
+      "metrics": {"scrollWidth": 390,"clientWidth": 390,"scrollHeight": 11220,"headerHeight": 75,"visiblePanels": 1,"focusables": 31,"sections": 11,"navPosition": "sticky"},
+      "stateAfterLatency": "hold","panelVisible": true,"keyboardTabs": true,"mobileNav": true,"errors": []
+    },
+    {
+      "viewport": "reduced-motion",
+      "metrics": {"state": "run","pulseDisplay": "none","pulseAnimation": "none","coreAnimation": "none","scrollBehavior": "auto"},
+      "errors": []
+    }
+  ],
+  "document_routes": {
+    "resume.html": {"metrics": {"scrollWidth": 1280,"clientWidth": 1280,"pages": 2,"downloads": ["docs/Russell-Dudek-SGWS-AIML-Resume.pdf"],"navLinks": ["Candidate Thesis","View Cover Letter","120-Day Plan","Download PDF"],"hasPrint": true},"errors": []},
+    "cover-letter.html": {"metrics": {"scrollWidth": 1280,"clientWidth": 1280,"pages": 1,"downloads": ["docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf"],"navLinks": ["Candidate Thesis","View Resume","120-Day Plan","Download PDF"],"hasPrint": true},"errors": []},
+    "interview-brief.html": {"metrics": {"scrollWidth": 1280,"clientWidth": 1280,"pages": 2,"downloads": ["docs/Russell-Dudek-SGWS-AIML-Interview-Brief.pdf"],"navLinks": ["Candidate Thesis","View Resume","View Reliability Contract","120-Day Plan","Download PDF"],"hasPrint": true},"errors": []},
+    "120-day-plan.html": {"metrics": {"scrollWidth": 1280,"clientWidth": 1280,"pages": 2,"downloads": ["docs/Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf"],"navLinks": ["Candidate Thesis","Interview Brief","Reliability Contract","Download PDF"],"hasPrint": true},"errors": []},
+    "reliability-contract.html": {"metrics": {"scrollWidth": 1280,"clientWidth": 1280,"pages": 1,"downloads": ["docs/Model-Reliability-Contract.pdf"],"navLinks": ["Candidate Thesis","Interview Brief","120-Day Plan","Download PDF"],"hasPrint": true},"errors": []}
+  },
+  "functional_contracts": {
+    "no_horizontal_overflow": true,"resume_to_cover": true,"cover_to_resume": true,"entry_plan_route": true,"skip_navigation": true,"keyboard_tabs": true,"mobile_navigation": true,"visible_focus_states": true,"base_path_safe_relative_links": true,"pdf_downloads_all": true,"document_and_print_css": true,"missing_local_references": [],"duplicate_ids": {}
+  },
+  "pdfs": {
+    "Model-Reliability-Contract.pdf": {"pages": 1,"bytes": 3598,"sha256": "0e8acf843e4646fb5b1831f0cd7e743e212aff7ce45ff60c0d6fe047cca32c21","openable": true},
+    "Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf": {"pages": 2,"bytes": 7021,"sha256": "97265674188a94d6eb981cb709be29e11cd09614b9256f7ba73920b2a53bc0a7","openable": true},
+    "Russell-Dudek-SGWS-AIML-Cover-Letter.pdf": {"pages": 1,"bytes": 3978,"sha256": "d4b17f074978f3e54d2c240c1f3e8210e44c762a4df0db439381be04118feabf","openable": true},
+    "Russell-Dudek-SGWS-AIML-Interview-Brief.pdf": {"pages": 2,"bytes": 7071,"sha256": "4aae0a43a86d59cc10c40706a542a611b0b7d923645b22b1fa2cbb8e518f5c4f","openable": true},
+    "Russell-Dudek-SGWS-AIML-Resume.pdf": {"pages": 2,"bytes": 8038,"sha256": "b401b5b6f60a25bb5cedab9e94c87e12f75756c4cfca3b284514f9c78dcf12b4","openable": true}
+  },
+  "manifest": {
+    "routes": ["index.html","resume.html","cover-letter.html","interview-brief.html","120-day-plan.html","reliability-contract.html"],
+    "source": ["styles.css","documents.css","base.css","app.js","assets/reliability-mark.svg","campaign-metadata.json","brand-intelligence.md","alignment-audit.md","campaign-completion-audit.md","audit-evidence.json","README.md"],
+    "pdfs": ["docs/Russell-Dudek-SGWS-AIML-Resume.pdf","docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf","docs/Russell-Dudek-SGWS-AIML-Interview-Brief.pdf","docs/Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf","docs/Model-Reliability-Contract.pdf"]
+  },
+  "visual_review": {
+    "full_page_screenshots_inspected": true,
+    "hero_is_role_specific": true,
+    "lower_sections_preserve_visual_system": true,
+    "role_derived_motion": "release -> observe -> hold -> recover",
+    "meaningful_interaction": "scenario tabs change signal, owner, action, return evidence, and interlock state",
+    "reduced_motion": "automatic cycling and pulse animation disabled; controls remain usable"
+  },
+  "publication": {"pages_admin_available": false,"manual_fallback": "Settings -> Pages -> Deploy from a branch -> main -> / (root)"}
+}
