@@ -3,7 +3,7 @@ name: Apply RoleForge Brand Fidelity campaign
 on:
   push:
     paths:
-      - 'campaign-payload.part2'
+      - 'campaign-payload.part07'
   workflow_dispatch:
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cat campaign-payload.part1 campaign-payload.part2 | base64 --decode > /tmp/roleforge-campaign.tar.gz
+          cat campaign-payload.part{01..07} | base64 --decode > /tmp/roleforge-campaign.tar.gz
           tar -xzf /tmp/roleforge-campaign.tar.gz -C .
           test -s index.html
           test -s brand-tokens.css
@@ -75,7 +75,6 @@ jobs:
           python3 - <<'PY'
           import hashlib, json, subprocess
           from pathlib import Path
-
           files = {
               'resume': Path('docs/Russell-Dudek-SGWS-AIML-Resume.pdf'),
               'cover_letter': Path('docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf'),
@@ -107,7 +106,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git rm -f campaign-payload.part1 campaign-payload.part2 .github/workflows/apply-brand-fidelity-campaign.yml
+          git rm -f campaign-payload.part{01..07} .github/workflows/apply-brand-fidelity-campaign.yml
           git add index.html resume.html cover-letter.html interview-brief.html 120-day-plan.html reliability-contract.html \
             brand-tokens.css styles.css documents.css app.js brand-intelligence.md campaign-metadata.json \
             artifact-manifest.json alignment-audit.md brand-fidelity-audit.md campaign-completion-audit.md \
