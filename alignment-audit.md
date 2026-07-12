@@ -16,7 +16,7 @@ The complete Brand Fidelity repair is committed to `main`, and all available sou
 - `references/brand-fidelity.md` - `f3c77eff7b9ddca81f2c47cee2a7927228fc5c61`
 - `references/github-publish.md` - `4fa14d10aeb31bb3ddaeef9a4b4c7fee7cb4607f`
 - `references/campaign-completion-audit.md` - `52811fecaa8f2d564f8bacb4eacc6a8959dccdc2`
-- `memory/candidate-evidence.yaml` - `2da61ff1d277e2e20569c68e57316e73827173df`
+- `memory/candidate-evidence.yaml` - `2da61ff1c277e2e20569c68e57316e73827173df`
 - `memory/pattern-ledger.md` - `86dc198729edecc0988e02b03d200148c40d6180`
 - `memory/anti-clone-ledger.md` - `f3e26bae333c033e03f0e4717be2dbd1b13d606f`
 
