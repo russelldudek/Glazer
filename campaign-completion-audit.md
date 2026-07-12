@@ -1,67 +1,72 @@
 # Campaign Completion Audit
 
-## Repository identity
+## Campaign state
+
+`building`
+
+## Repository and branch
 
 - Campaign repository: `russelldudek/Glazer`
 - Canonical publication branch: `main`
-- Repository state when discovered: `planned` (empty)
-- Reconstructed target state: complete campaign manifest committed to `main`
+- Repository was originally discovered empty (`planned`) and has been reconstructed.
 
 ## Manifest
 
-Expected routes and files are defined in `artifact-manifest.json`. The set includes the candidate site, resume, cover letter, interview brief, standalone 120-day plan, Reliability Contract, shared styles and scripts, original asset, metadata, audit records, README, and five generated PDFs.
+The functional manifest includes:
+
+- candidate vision site;
+- two-page resume;
+- one-page cover letter;
+- two-page interview thesis brief;
+- two-page 120-day plan;
+- one-page Model Reliability Contract;
+- shared brand tokens, responsive styles, document/print styles, and scripts;
+- locally committed official brand assets and provenance;
+- brand, alignment, completion, metadata, and audit records;
+- five generated PDFs.
+
+`artifact-manifest.json` is the authoritative expected path list.
 
 ## Visual experience
 
-Passed in local rendered inspection. The final site uses an original Reliability Interlock hero, an editorial company-moment timeline, a high-contrast mandate and tension band, an interactive contract surface, a decision path, an evidence trail, a 120-day operating review, direct objection handling, sourced research, and a role-specific final CTA. Lower sections preserve the same visual language rather than collapsing into a generic dashboard or repeated card stack.
+Passed in local rendering. The complete page uses visible official company identity, an original Reliability Interlock hero, current company moment, actual mandate and tensions, interactive contract, decisions, stakeholders, scorecard, evidence trail, entry plan, direct objection, executive questions, sources, and final CTA. Lower sections preserve the visual system.
 
 ## Role-derived motion and interaction
 
-Passed.
+Passed locally.
 
-- Signature motion: release → observe → hold → recover sequence within the Reliability Interlock.
-- Meaningful interaction: drift, latency, business-outcome, and data-contract scenario tabs change the interlock state and the signal/owner/action/evidence chain.
+- Signature motion: Release -> Observe -> Hold -> Recover.
+- Meaningful interaction: drift, latency, business-outcome, and data-contract scenarios change the system state and the signal/owner/action/evidence chain.
 - Keyboard: Arrow keys, Home, and End operate the tablist.
-- Reduced motion: automatic cycling and animated pulses are disabled; all controls and content remain usable.
+- Reduced motion: automatic cycling and pulses are disabled while content remains usable.
 
-## Responsive render review
+## Responsive and functional review
 
-Rendered through an in-memory browser document at:
+Passed locally at 1440 x 900, 1280 x 800, 768 x 1024, 390 x 844, and reduced-motion mode.
 
-- 1440 × 900
-- 1280 × 800
-- 768 × 1024
-- 390 × 844
-- 1280 × 800 with `prefers-reduced-motion: reduce`
-
-Results: no horizontal overflow; mobile navigation opened; one tab panel remained visible; scenario state changes and keyboard navigation worked; no browser console or page errors were recorded. Full-page and detail screenshots were visually inspected during the audit. Metrics are recorded in `audit-evidence.json`.
-
-## Functional checks
-
-Passed at source and rendered level:
-
-- skip navigation and semantic `main`
-- responsive navigation and accessible labels
-- visible focus states
-- keyboard scenario tabs
-- deployment-safe relative internal links
-- reciprocal resume and cover-letter navigation
-- visible PDF downloads on every printable route
-- no missing local references or duplicate IDs
-- sticky header offset verified against anchored content
+- No horizontal overflow.
+- Mobile navigation opens and closes.
+- One active scenario panel remains visible.
+- Skip navigation, semantic main, visible focus, accessible labels, and deployment-safe relative links are present.
+- The resume exposes `View Cover Letter`; the cover letter exposes `View Resume`.
+- Every printable route exposes `Download PDF` and a separate `Print` action.
 
 ## Documents and PDFs
 
-Passed after render-first review:
+Passed locally after render-first inspection and preflight.
 
-- Resume: 2 pages; page one uses the printable area deliberately and has no large unused lower region.
-- Cover letter: 1 page.
-- Interview thesis brief: 2 pages.
-- 120-day plan: 2 pages.
-- Model Reliability Contract: 1 page; repaired into a balanced, legible form.
+- Resume: 2 pages. Page-one last substantive block finishes approximately 0.21 inches above the footer zone, with no stretched dark field or filler.
+- Cover letter: 1 page. Last substantive block finishes approximately 0.59 inches above the footer zone.
+- Interview brief: 2 pages. Page-one composition and footer separation verified.
+- 120-day plan: 2 pages with deliberate report composition.
+- Model Reliability Contract: 1 page with complete release, service, intervention, learning, and review fields.
 
-All PDFs open successfully, contain selectable text, and passed PDF preflight.
+All PDFs are openable, have selectable text, embedded fonts, expected Letter page sizes, and no preflight errors.
 
-## Publication limitation
+## Current blockers
 
-GitHub Pages administration is not exposed by the connected GitHub tool. After the complete manifest is verified on `main`, deployment requires the documented manual action: **Settings → Pages → Deploy from a branch → main → / (root)**. A live URL must not be claimed until that deployment is verified.
+1. GitHub Pages administration is not exposed by the connected GitHub tool. The live deployment cannot be enabled or verified here.
+2. Live repository-path checks for the official logo, reciprocal resume/cover-letter navigation, motion, reduced motion, and PDF downloads remain unknown.
+3. A literal screenshot-based side-by-side comparison with the current official company webpage is unsupported in this environment.
+
+Because these required checks remain unknown, the campaign may not be classified as `complete`.

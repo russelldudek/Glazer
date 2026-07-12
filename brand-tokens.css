@@ -1,0 +1,16 @@
+:root {
+  --brand-primary: #A51E2F; /* source-sampled from official compact SVG */
+  --brand-primary-desktop: #A6192E; /* source-sampled from official desktop SVG */
+  --brand-secondary: #E0B643; /* source-sampled from official compact SVG */
+  --brand-secondary-desktop: #E1B744; /* source-sampled from official desktop SVG */
+  --brand-white: #FFFFFF; /* official logo field */
+  --brand-ink: #181717; /* source-aligned accessible neutral */
+  --brand-cream: #F7F3EB; /* source-sampled warm editorial field */
+  --brand-mist: #EEE9E0; /* candidate-neutral document surface */
+  --campaign-accent: #2C746B; /* candidate-original reliability state */
+  --campaign-accent-soft: #DCECE8;
+  --line: #D8D0C4;
+  --muted: #625D58;
+  --display-font: Georgia, "Times New Roman", serif;
+  --body-font: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+}

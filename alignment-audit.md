@@ -1,50 +1,48 @@
 # Canonical RoleForge Alignment Audit
 
-Audit scope: Southern Glazer's - Director of Product Operations, Artificial Intelligence and Machine Learning (AI/ML).
+## Campaign state
 
-## Canonical source refreshed
+`building`
 
-The campaign was rebuilt after re-reading the latest `main` versions of:
+The complete brand-fidelity repair is ready for `main`. Completion remains open until GitHub Pages and the live repository-path routes are verified.
 
-- `SKILL.md`
-- `references/portfolio-learning-loop.md`
-- `references/role-intelligence.md`
-- `references/evidence-integrity.md`
-- `references/artifact-contracts.md`
-- `references/github-publish.md`
-- `references/campaign-completion-audit.md`
-- `memory/candidate-evidence.yaml`
-- `memory/portfolio-index.yaml`
-- `memory/pattern-ledger.md`
-- `memory/anti-clone-ledger.md`
-- relevant completed AI and operations cases
+## Canonical source refreshed before repair
+
+- `SKILL.md` - `8c8a581daec228cc36bee4c94642193064bcbba3`
+- `references/portfolio-learning-loop.md` - `fa9a15a5c1c9f64de8cf39c1b9d2fee418269d75`
+- `references/role-intelligence.md` - `4f6a75f4b11a2c2b41aaff557fc37e12ef43fed3`
+- `references/evidence-integrity.md` - `0866ece7a660bea4043c043ef08013314b30cd8a`
+- `references/artifact-contracts.md` - `3d364d7c686d9014124ea0aba38beac7a2399f0d`
+- `references/brand-fidelity.md` - `f3c77eff7b9ddca81f2c47cee2a7927228fc5c61`
+- `references/github-publish.md` - `4fa14d10aeb31bb3ddaeef9a4b4c7fee7cb4607f`
+- `references/campaign-completion-audit.md` - `52811fecaa8f2d564f8bacb4eacc6a8959dccdc2`
+- `memory/candidate-evidence.yaml` - `2da61ff1c277e2e20569c68e57316e73827173df`
+- `memory/pattern-ledger.md` - `86dc198729edecc0988e02b03d200148c40d6180`
+- `memory/anti-clone-ledger.md` - `f3e26bae333c033e03f0e4717be2dbd1b13d606f`
 
 ## Corrections made
 
-- Resolved the safe campaign repository as `russelldudek/Glazer`; the private RoleForge repository was not used as a publication target.
-- Reconstructed the complete campaign from the original posting and verified conversation context.
-- Replaced the envelope-like hero with a materially distinct **Reliability Interlock** to avoid collision with the portfolio's Executive Operating Envelope pattern.
-- Added role-derived motion that cycles release, observe, hold, and recover states.
-- Connected scenario tabs to the hero state so the interaction visibly teaches signal, owner, action, and evidence.
-- Added keyboard arrow-key behavior for the scenario tablist, visible focus states, skip navigation, responsive navigation, mobile re-composition, and complete reduced-motion behavior.
-- Added a standalone `120-day-plan.html` and generated two-page PDF.
-- Preserved visible `Download PDF` actions and reciprocal resume/cover-letter navigation.
-- Regenerated and rendered all PDFs; repaired the Model Reliability Contract into a professionally composed one-page form.
-- Preserved evidence integrity: no conventional seven-year MLOps tenure, four-year ML-platform leadership tenure, or unverified degree equivalence is claimed.
-- Updated brand intelligence with official asset provenance, motion character, usage constraints, and artifact-specific application.
+- Preserved the safe public campaign repository `russelldudek/Glazer`; the private RoleForge repository remains source-of-truth only.
+- Added the required `brand-intelligence.md`, `brand-tokens.css`, and `assets/brand/` package.
+- Stored the official Southern Glazer's desktop and compact SVGs locally from authoritative corporate asset URLs.
+- Replaced the candidate-only `RD` recognition layer with visible official company identity above the fold.
+- Added the explicit relationship: candidate vision for the canonical role, independent candidate campaign by Russell Dudek.
+- Preserved the official mark without recoloring, tracing, cropping, animation, filters, shadows, outlines, or combination into a new logo.
+- Rebuilt the color system around source-sampled official red and gold. Candidate-original green is limited to reliability/recovery status.
+- Documented the typography evidence, substitute decision, and license boundary; no proprietary font files are committed.
+- Preserved the Reliability Interlock, Release-Observe-Hold-Recover motion, and production-event scenario interaction as Russell's original role thesis.
+- Added stakeholder topology, balanced scorecard, change burden, direct location constraint, and current company sources.
+- Applied the same brand system to resume, cover letter, interview brief, entry plan, Reliability Contract, and PDFs.
+- Regenerated every PDF and corrected page balance and report pagination.
 
-## Narrative continuity
+## Evidence integrity
 
-The site, resume, cover letter, interview brief, entry plan, and operating artifact reinforce one argument: production AI earns scale when ownership, release evidence, live observability, intervention rights, and business outcomes are explicit.
+Titles, dates, metrics, customers/partners, credentials, education, claim strength, and concept/deployment boundaries remain within `memory/candidate-evidence.yaml`. The campaign does not claim seven years of ML platform operations, four years leading that exact function, a specified computing/electronics degree equivalence, or relocation intent.
 
-## Anti-clone finding
+## Anti-clone result
 
-The final campaign does not reuse the portfolio's orbit, constellation, graph, dispatch board, delivery weave, proving ground, continuity ledger, control room, digital spine, or nested operating-envelope composition. The Reliability Interlock's mechanical lock/hold/recover state grammar is a new experiment.
-
-## Evidence finding
-
-Career claims match `memory/candidate-evidence.yaml`. Concept work remains labeled as concept; verified metrics and titles are unchanged; the strongest MLOps pedigree objection is stated directly.
+The campaign retains a mechanical Reliability Interlock rather than a portfolio orbit, constellation, graph, dispatch queue, delivery weave, proving ground, ledger, control room, digital spine, or nested operating envelope. Official company identity strengthens employer recognition without replacing the role-derived operating model.
 
 ## Audit evidence
 
-See `audit-evidence.json` and `campaign-completion-audit.md` for viewport, interaction, accessibility, file, and PDF checks.
+See `brand-fidelity-audit.md`, `campaign-completion-audit.md`, and `audit-evidence.json`.

@@ -4,59 +4,313 @@
   "rendered_viewports": [
     {
       "viewport": "1440x900",
-      "metrics": {"scrollWidth": 1440,"clientWidth": 1440,"scrollHeight": 6486,"headerHeight": 75,"visiblePanels": 1,"focusables": 31,"sections": 11,"navPosition": "sticky"},
-      "stateAfterLatency": "hold","panelVisible": true,"keyboardTabs": true,"mobileNav": null,"errors": []
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "scrollHeight": 7399,
+        "logo": true,
+        "logoTop": 155,
+        "logoBottom": 266.21875,
+        "qualifier": "Independent candidate campaign by Russell Dudek",
+        "officialMarkAnimated": "none",
+        "activePanels": 1,
+        "brandPrimary": "#A51E2F",
+        "brandSecondary": "#E0B643",
+        "focusables": 33,
+        "sections": 13,
+        "footerQualifier": "Independent candidate work by Russell Dudek. This site is not affiliated with, sponsored by, approved by, or endorsed by Southern Glazer's Wine & Spirits. The official mark is used only for nominative identification of the target employer."
+      },
+      "stateAfterLatency": "hold",
+      "panelVisible": true,
+      "keyboardTabs": true,
+      "mobileNav": null,
+      "errors": []
     },
     {
       "viewport": "1280x800",
-      "metrics": {"scrollWidth": 1280,"clientWidth": 1280,"scrollHeight": 6157,"headerHeight": 75,"visiblePanels": 1,"focusables": 31,"sections": 11,"navPosition": "sticky"},
-      "stateAfterLatency": "hold","panelVisible": true,"keyboardTabs": true,"mobileNav": null,"errors": []
+      "metrics": {
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "scrollHeight": 7173,
+        "logo": true,
+        "logoTop": 155,
+        "logoBottom": 266.21875,
+        "qualifier": "Independent candidate campaign by Russell Dudek",
+        "officialMarkAnimated": "none",
+        "activePanels": 1,
+        "brandPrimary": "#A51E2F",
+        "brandSecondary": "#E0B643",
+        "focusables": 33,
+        "sections": 13,
+        "footerQualifier": "Independent candidate work by Russell Dudek. This site is not affiliated with, sponsored by, approved by, or endorsed by Southern Glazer's Wine & Spirits. The official mark is used only for nominative identification of the target employer."
+      },
+      "stateAfterLatency": "hold",
+      "panelVisible": true,
+      "keyboardTabs": true,
+      "mobileNav": null,
+      "errors": []
     },
     {
       "viewport": "768x1024",
-      "metrics": {"scrollWidth": 768,"clientWidth": 768,"scrollHeight": 8213,"headerHeight": 75,"visiblePanels": 1,"focusables": 31,"sections": 11,"navPosition": "sticky"},
-      "stateAfterLatency": "hold","panelVisible": true,"keyboardTabs": true,"mobileNav": true,"errors": []
+      "metrics": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "scrollHeight": 9192,
+        "logo": true,
+        "logoTop": 155,
+        "logoBottom": 266.21875,
+        "qualifier": "Independent candidate campaign by Russell Dudek",
+        "officialMarkAnimated": "none",
+        "activePanels": 1,
+        "brandPrimary": "#A51E2F",
+        "brandSecondary": "#E0B643",
+        "focusables": 33,
+        "sections": 13,
+        "footerQualifier": "Independent candidate work by Russell Dudek. This site is not affiliated with, sponsored by, approved by, or endorsed by Southern Glazer's Wine & Spirits. The official mark is used only for nominative identification of the target employer."
+      },
+      "stateAfterLatency": "hold",
+      "panelVisible": true,
+      "keyboardTabs": true,
+      "mobileNav": true,
+      "errors": []
     },
     {
       "viewport": "390x844",
-      "metrics": {"scrollWidth": 390,"clientWidth": 390,"scrollHeight": 11220,"headerHeight": 75,"visiblePanels": 1,"focusables": 31,"sections": 11,"navPosition": "sticky"},
-      "stateAfterLatency": "hold","panelVisible": true,"keyboardTabs": true,"mobileNav": true,"errors": []
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "scrollHeight": 13007,
+        "logo": true,
+        "logoTop": 155,
+        "logoBottom": 305.203125,
+        "qualifier": "Independent candidate campaign by Russell Dudek",
+        "officialMarkAnimated": "none",
+        "activePanels": 1,
+        "brandPrimary": "#A51E2F",
+        "brandSecondary": "#E0B643",
+        "focusables": 33,
+        "sections": 13,
+        "footerQualifier": "Independent candidate work by Russell Dudek. This site is not affiliated with, sponsored by, approved by, or endorsed by Southern Glazer's Wine & Spirits. The official mark is used only for nominative identification of the target employer."
+      },
+      "stateAfterLatency": "hold",
+      "panelVisible": true,
+      "keyboardTabs": true,
+      "mobileNav": true,
+      "errors": []
     },
     {
       "viewport": "reduced-motion",
-      "metrics": {"state": "run","pulseDisplay": "none","pulseAnimation": "none","coreAnimation": "none","scrollBehavior": "auto"},
+      "metrics": {
+        "state": "run",
+        "pulseDisplay": "none",
+        "pulseAnimation": "none",
+        "coreAnimation": "none",
+        "scrollBehavior": "auto"
+      },
       "errors": []
     }
   ],
   "document_routes": {
-    "resume.html": {"metrics": {"scrollWidth": 1280,"clientWidth": 1280,"pages": 2,"downloads": ["docs/Russell-Dudek-SGWS-AIML-Resume.pdf"],"navLinks": ["Candidate Thesis","View Cover Letter","120-Day Plan","Download PDF"],"hasPrint": true},"errors": []},
-    "cover-letter.html": {"metrics": {"scrollWidth": 1280,"clientWidth": 1280,"pages": 1,"downloads": ["docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf"],"navLinks": ["Candidate Thesis","View Resume","120-Day Plan","Download PDF"],"hasPrint": true},"errors": []},
-    "interview-brief.html": {"metrics": {"scrollWidth": 1280,"clientWidth": 1280,"pages": 2,"downloads": ["docs/Russell-Dudek-SGWS-AIML-Interview-Brief.pdf"],"navLinks": ["Candidate Thesis","View Resume","View Reliability Contract","120-Day Plan","Download PDF"],"hasPrint": true},"errors": []},
-    "120-day-plan.html": {"metrics": {"scrollWidth": 1280,"clientWidth": 1280,"pages": 2,"downloads": ["docs/Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf"],"navLinks": ["Candidate Thesis","Interview Brief","Reliability Contract","Download PDF"],"hasPrint": true},"errors": []},
-    "reliability-contract.html": {"metrics": {"scrollWidth": 1280,"clientWidth": 1280,"pages": 1,"downloads": ["docs/Model-Reliability-Contract.pdf"],"navLinks": ["Candidate Thesis","Interview Brief","120-Day Plan","Download PDF"],"hasPrint": true},"errors": []}
+    "resume.html": {
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "pages": 2,
+      "downloads": [
+        "docs/Russell-Dudek-SGWS-AIML-Resume.pdf"
+      ],
+      "navLinks": [
+        "Candidate Thesis",
+        "View Cover Letter",
+        "120-Day Plan",
+        "Download PDF"
+      ],
+      "hasPrint": true,
+      "logos": 2,
+      "qualifiers": [
+        "Independent candidate campaign",
+        "Independent candidate campaign"
+      ],
+      "errors": []
+    },
+    "cover-letter.html": {
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "pages": 1,
+      "downloads": [
+        "docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf"
+      ],
+      "navLinks": [
+        "Candidate Thesis",
+        "View Resume",
+        "120-Day Plan",
+        "Download PDF"
+      ],
+      "hasPrint": true,
+      "logos": 1,
+      "qualifiers": [
+        "Independent candidate campaign"
+      ],
+      "errors": []
+    },
+    "interview-brief.html": {
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "pages": 2,
+      "downloads": [
+        "docs/Russell-Dudek-SGWS-AIML-Interview-Brief.pdf"
+      ],
+      "navLinks": [
+        "Candidate Thesis",
+        "View Resume",
+        "120-Day Plan",
+        "Reliability Contract",
+        "Download PDF"
+      ],
+      "hasPrint": true,
+      "logos": 2,
+      "qualifiers": [
+        "Independent candidate campaign",
+        "Independent candidate campaign"
+      ],
+      "errors": []
+    },
+    "120-day-plan.html": {
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "pages": 2,
+      "downloads": [
+        "docs/Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf"
+      ],
+      "navLinks": [
+        "Candidate Thesis",
+        "Interview Brief",
+        "Reliability Contract",
+        "Download PDF"
+      ],
+      "hasPrint": true,
+      "logos": 2,
+      "qualifiers": [
+        "Independent candidate campaign",
+        "Independent candidate campaign"
+      ],
+      "errors": []
+    },
+    "reliability-contract.html": {
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "pages": 1,
+      "downloads": [
+        "docs/Model-Reliability-Contract.pdf"
+      ],
+      "navLinks": [
+        "Candidate Thesis",
+        "Interview Brief",
+        "120-Day Plan",
+        "Download PDF"
+      ],
+      "hasPrint": true,
+      "logos": 1,
+      "qualifiers": [
+        "Independent candidate campaign"
+      ],
+      "errors": []
+    }
   },
-  "functional_contracts": {
-    "no_horizontal_overflow": true,"resume_to_cover": true,"cover_to_resume": true,"entry_plan_route": true,"skip_navigation": true,"keyboard_tabs": true,"mobile_navigation": true,"visible_focus_states": true,"base_path_safe_relative_links": true,"pdf_downloads_all": true,"document_and_print_css": true,"missing_local_references": [],"duplicate_ids": {}
+  "official_brand_assets": {
+    "assets/brand/southern-glazers-logo-secondary.svg": {
+      "git_blob_sha": "e966d3fb314215987f6cc312662b496cd004e1f2",
+      "source": "https://www.southernglazers.com/content/dam/web/qa/southern-glazers-logo-secondary.svg",
+      "handling": "preserved unchanged on main"
+    },
+    "assets/brand/southern-glazers-logo-secondary-mobile.svg": {
+      "git_blob_sha": "0d0b10dccf9cea09d1c5b7e7a5ec7e72b7b42b74",
+      "source": "https://www.southernglazers.com/content/dam/web/qa/southern-glazers-logo-secondary-mobile.svg",
+      "handling": "preserved unchanged on main"
+    }
   },
   "pdfs": {
-    "Model-Reliability-Contract.pdf": {"pages": 1,"bytes": 3598,"sha256": "0e8acf843e4646fb5b1831f0cd7e743e212aff7ce45ff60c0d6fe047cca32c21","openable": true},
-    "Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf": {"pages": 2,"bytes": 7021,"sha256": "97265674188a94d6eb981cb709be29e11cd09614b9256f7ba73920b2a53bc0a7","openable": true},
-    "Russell-Dudek-SGWS-AIML-Cover-Letter.pdf": {"pages": 1,"bytes": 3978,"sha256": "d4b17f074978f3e54d2c240c1f3e8210e44c762a4df0db439381be04118feabf","openable": true},
-    "Russell-Dudek-SGWS-AIML-Interview-Brief.pdf": {"pages": 2,"bytes": 7071,"sha256": "4aae0a43a86d59cc10c40706a542a611b0b7d923645b22b1fa2cbb8e518f5c4f","openable": true},
-    "Russell-Dudek-SGWS-AIML-Resume.pdf": {"pages": 2,"bytes": 8038,"sha256": "b401b5b6f60a25bb5cedab9e94c87e12f75756c4cfca3b284514f9c78dcf12b4","openable": true}
+    "Model-Reliability-Contract.pdf": {
+      "pages": 1,
+      "sha256": "e7d9cfa5bb640f8ebebab76dc33df09733fef82bf58b81e5aab8e55ffe0df7b1",
+      "bytes": 72598,
+      "openable": true,
+      "selectable_text": true
+    },
+    "Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf": {
+      "pages": 2,
+      "sha256": "8abae8c6bb3111ede52b395c80227f52e596c5f3e359aba99d74754a710ec50f",
+      "bytes": 83772,
+      "openable": true,
+      "selectable_text": true
+    },
+    "Russell-Dudek-SGWS-AIML-Cover-Letter.pdf": {
+      "pages": 1,
+      "sha256": "20e09aec4e8e5d4f2271af5844adfdf04ab967627337da3bc9a2ef46b3b851c1",
+      "bytes": 63626,
+      "openable": true,
+      "selectable_text": true
+    },
+    "Russell-Dudek-SGWS-AIML-Interview-Brief.pdf": {
+      "pages": 2,
+      "sha256": "a3757414796e7910901dcba90056e0ad5ea99c13635990b48d5c5e72e16d16cd",
+      "bytes": 98714,
+      "openable": true,
+      "selectable_text": true
+    },
+    "Russell-Dudek-SGWS-AIML-Resume.pdf": {
+      "pages": 2,
+      "sha256": "9b63861f2b7a83e929a76b1b48317a34492c9c72856b2216a6df7b9a727889f8",
+      "bytes": 97877,
+      "openable": true,
+      "selectable_text": true
+    }
   },
-  "manifest": {
-    "routes": ["index.html","resume.html","cover-letter.html","interview-brief.html","120-day-plan.html","reliability-contract.html"],
-    "source": ["styles.css","documents.css","base.css","app.js","assets/reliability-mark.svg","campaign-metadata.json","brand-intelligence.md","alignment-audit.md","campaign-completion-audit.md","audit-evidence.json","README.md"],
-    "pdfs": ["docs/Russell-Dudek-SGWS-AIML-Resume.pdf","docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf","docs/Russell-Dudek-SGWS-AIML-Interview-Brief.pdf","docs/Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf","docs/Model-Reliability-Contract.pdf"]
+  "print_balance": {
+    "resume_page_1_gap_to_footer_in": 0.21,
+    "cover_letter_gap_to_footer_in": 0.59,
+    "interview_brief_page_1_gap_to_footer_in": 0.51,
+    "entry_plan_page_1_gap_to_footer_in": 1.11,
+    "contract_gap_to_footer_in": 0.8
   },
-  "visual_review": {
-    "full_page_screenshots_inspected": true,
-    "hero_is_role_specific": true,
-    "lower_sections_preserve_visual_system": true,
-    "role_derived_motion": "release -> observe -> hold -> recover",
-    "meaningful_interaction": "scenario tabs change signal, owner, action, return evidence, and interlock state",
-    "reduced_motion": "automatic cycling and pulse animation disabled; controls remain usable"
-  },
-  "publication": {"pages_admin_available": false,"manual_fallback": "Settings -> Pages -> Deploy from a branch -> main -> / (root)"}
+  "limitations": [
+    "GitHub Pages administration is not exposed by the connected GitHub tool; live deployment and live-path link verification remain unverified.",
+    "The environment cannot capture the current official Southern Glazer's webpage as a visual screenshot for literal side-by-side comparison; brand fidelity was checked against current official page content, official locally committed SVG assets, exact source colors, and the rendered campaign."
+  ],
+  "committed_pdfs": {
+    "resume": {
+      "path": "docs/Russell-Dudek-SGWS-AIML-Resume.pdf",
+      "pages": 2,
+      "bytes": 121071,
+      "sha256": "3d5109ef1e2301374ab0ae653611ec068ce6f1e908f91c83aee0b75f240a5577",
+      "generated_on": "GitHub Actions from audited main source"
+    },
+    "cover_letter": {
+      "path": "docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf",
+      "pages": 1,
+      "bytes": 49203,
+      "sha256": "665d1b5afc9bdb8c963aa363a99953d68c055392db7cbc4ecb414a9e352d5426",
+      "generated_on": "GitHub Actions from audited main source"
+    },
+    "interview_brief": {
+      "path": "docs/Russell-Dudek-SGWS-AIML-Interview-Brief.pdf",
+      "pages": 2,
+      "bytes": 106064,
+      "sha256": "5212bb1c82e2d8ab8ce1c5a1de2bd66f83daf0bc58c57311d186485cff749152",
+      "generated_on": "GitHub Actions from audited main source"
+    },
+    "entry_plan": {
+      "path": "docs/Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf",
+      "pages": 2,
+      "bytes": 116916,
+      "sha256": "27ebc87ccb85220cefd6d5fcf66216b415333b44fa307ee902441fccb8275732",
+      "generated_on": "GitHub Actions from audited main source"
+    },
+    "reliability_contract": {
+      "path": "docs/Model-Reliability-Contract.pdf",
+      "pages": 1,
+      "bytes": 74556,
+      "sha256": "8342e7cf3bbd8fb56c917180cb4fa57231510e7113c329f852f2c78453aa9549",
+      "generated_on": "GitHub Actions from audited main source"
+    }
+  }
 }

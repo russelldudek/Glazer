@@ -8,17 +8,22 @@
     "reliability-contract.html"
   ],
   "source": [
+    "brand-tokens.css",
     "styles.css",
     "documents.css",
-    "base.css",
     "app.js",
-    "assets/reliability-mark.svg",
-    "campaign-metadata.json",
     "brand-intelligence.md",
+    "campaign-metadata.json",
+    "artifact-manifest.json",
     "alignment-audit.md",
+    "brand-fidelity-audit.md",
     "campaign-completion-audit.md",
-    "audit-evidence.json",
     "README.md"
+  ],
+  "brand_assets": [
+    "assets/brand/southern-glazers-logo-secondary.svg",
+    "assets/brand/southern-glazers-logo-secondary-mobile.svg",
+    "assets/brand/PROVENANCE.md"
   ],
   "pdfs": [
     "docs/Russell-Dudek-SGWS-AIML-Resume.pdf",

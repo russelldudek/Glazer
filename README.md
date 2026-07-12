@@ -13,44 +13,26 @@
 
 AI earns scale when every production model carries an operating contract: what it may influence, how health is measured, who owns intervention, and what evidence justifies the next release.
 
-The website expresses that thesis through a **Reliability Interlock**. Four clauses - intent and ownership, release evidence, live observability, and intervention rights - lock a model into a safe run state. The motion system then demonstrates release, observe, hold, and recover states. Scenario tabs change the interlock and teach how drift, latency, business-outcome decay, and data-contract change should connect signal, owner, action, and evidence.
+The website expresses that thesis through a **Reliability Interlock**. The official Southern Glazer's compact logo and source-sampled red/gold identity establish who the campaign is for; the interlock, motion, scenarios, scorecard, and entry plan establish Russell Dudek's original point of view.
 
-## Complete manifest
+## Brand asset package
 
-- `index.html` - candidate vision site and animated Reliability Interlock
-- `resume.html` - two-page role-aligned resume with reciprocal document navigation
-- `cover-letter.html` - one-page cover letter with reciprocal document navigation
-- `interview-brief.html` - two-page interview thesis brief
-- `120-day-plan.html` - two-page director-level entry plan
-- `reliability-contract.html` - one-page Model Reliability Contract template
-- `styles.css` - shared responsive, motion, reduced-motion, document, and print system
-- `app.js` - mobile navigation, automatic interlock sequence, scenario state transitions, and keyboard tab behavior
-- `assets/reliability-mark.svg` - original candidate-created mark
-- `docs/` - generated PDFs for every printable route
-- `artifact-manifest.json` - expected route and file manifest
-- `campaign-metadata.json` - canonical campaign metadata and original job URL
-- `brand-intelligence.md` - employer visual research and asset provenance
-- `alignment-audit.md` - canonical RoleForge alignment record
-- `campaign-completion-audit.md` - completion-gate evidence
+- `brand-intelligence.md`
+- `brand-tokens.css`
+- `assets/brand/southern-glazers-logo-secondary.svg`
+- `assets/brand/southern-glazers-logo-secondary-mobile.svg`
+- `assets/brand/PROVENANCE.md`
+
+Official marks are locally committed and unmodified. The campaign is explicitly identified as independent candidate work and does not imply endorsement.
 
 ## Evidence integrity
 
-The campaign intentionally does **not** claim seven years of ML platform operations, four years leading that exact function, or an unverified computing/electronics degree. It makes a transparent transferability case from verified high-reliability engineering, quality systems, 24/7 operations, telemetry-to-action loops, AI-first operating transformation, and AI governance/workflow design.
+The campaign does not claim seven years of ML platform operations, four years leading that exact function, an unverified computing/electronics degree equivalence, or relocation intent. It presents a transparent transferability case from verified high-reliability engineering, 24/7 operations, telemetry-to-action loops, AI-first operating transformation, and AI governance/workflow design.
 
-## Research and hypothesis boundary
+## Complete manifest
 
-Company reach, Proof scale, supply-chain capabilities, leadership functions, and the role requirements are sourced from the original posting and public Southern Glazer's pages. The Reliability Interlock, Model Reliability Contract, scorecard, use-case implications, decision architecture, and 120-day plan are candidate hypotheses for discovery.
-
-## PDF set
-
-- `docs/Russell-Dudek-SGWS-AIML-Resume.pdf` - 2 pages
-- `docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf` - 1 page
-- `docs/Russell-Dudek-SGWS-AIML-Interview-Brief.pdf` - 2 pages
-- `docs/Russell-Dudek-SGWS-AIML-120-Day-Plan.pdf` - 2 pages
-- `docs/Model-Reliability-Contract.pdf` - 1 page
-
-Every printable HTML route exposes a visible `Download PDF` action to a real committed file. Web-only controls are hidden in print/PDF output.
+See `artifact-manifest.json`. Every printable HTML route exposes a real `Download PDF` link to a committed file.
 
 ## GitHub Pages
 
-The repository is structured for GitHub Pages deployment from `main` and `/ (root)`. When Pages administration is not available through the connected tool, enable it manually under **Settings → Pages → Deploy from a branch → main → / (root)**.
+The repository is structured for GitHub Pages deployment from `main` and `/ (root)`. Live deployment must be verified separately before the campaign can be classified as complete.
