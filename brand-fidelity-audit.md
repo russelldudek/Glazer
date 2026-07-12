@@ -2,7 +2,7 @@
 
 ## Status
 
-`building - committed-source and local-render checks pass; live and literal official-page side-by-side verification remain open`
+`blocked - committed-source and local-render checks pass; live and literal official-page side-by-side verification are unsupported by the available capabilities`
 
 ## Visible company identity
 
@@ -79,8 +79,10 @@ Passed locally at:
 
 No horizontal overflow, console error, missing logo, or ambiguous candidate relationship was found.
 
-## Unresolved verification
+## Capability blockers
 
-The environment cannot capture the current official Southern Glazer's webpage as a visual screenshot for a literal side-by-side rendered comparison. The audit instead compared the rendered campaign with current official page content, official corporate SVGs, exact source colors, and public visual/operating cues. This limitation prevents an unconditional final Brand Fidelity Audit pass under the user's strict contract.
+The environment cannot capture the current official Southern Glazer's webpage as a visual screenshot for the required literal side-by-side rendered comparison. The audit instead compared the rendered campaign with current official page content, official corporate SVGs, exact source colors, and public visual/operating cues.
 
-The live GitHub Pages deployment is also unverified, so live-path asset, reciprocal navigation, and PDF-download fidelity remain open.
+GitHub Pages administration and live-site inspection are also unavailable, so live-path asset, reciprocal navigation, motion, reduced-motion, and PDF-download fidelity remain unverified.
+
+The implemented Brand Fidelity work passes every available source and local-render check, but the strict full audit cannot receive an unconditional pass while those required checks remain unsupported.
