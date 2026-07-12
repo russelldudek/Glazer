@@ -2,13 +2,14 @@
 
 ## Campaign state
 
-`building`
+`blocked`
 
 ## Repository and branch
 
 - Campaign repository: `russelldudek/Glazer`
 - Canonical publication branch: `main`
 - Repository was originally discovered empty (`planned`) and has been reconstructed.
+- Complete approved artifact set is committed and re-fetched from `main`.
 
 ## Manifest
 
@@ -53,7 +54,7 @@ Passed locally at 1440 x 900, 1280 x 800, 768 x 1024, 390 x 844, and reduced-mot
 
 ## Documents and PDFs
 
-Passed locally after render-first inspection and preflight.
+Passed locally and regenerated from the committed branded HTML in GitHub Actions.
 
 - Resume: 2 pages. Page-one last substantive block finishes approximately 0.21 inches above the footer zone, with no stretched dark field or filler.
 - Cover letter: 1 page. Last substantive block finishes approximately 0.59 inches above the footer zone.
@@ -61,12 +62,12 @@ Passed locally after render-first inspection and preflight.
 - 120-day plan: 2 pages with deliberate report composition.
 - Model Reliability Contract: 1 page with complete release, service, intervention, learning, and review fields.
 
-All PDFs are openable, have selectable text, embedded fonts, expected Letter page sizes, and no preflight errors.
+All committed PDFs have valid PDF signatures. The workflow required exact page counts before committing them to `main`.
 
-## Current blockers
+## Completion blockers
 
 1. GitHub Pages administration is not exposed by the connected GitHub tool. The live deployment cannot be enabled or verified here.
 2. Live repository-path checks for the official logo, reciprocal resume/cover-letter navigation, motion, reduced motion, and PDF downloads remain unknown.
 3. A literal screenshot-based side-by-side comparison with the current official company webpage is unsupported in this environment.
 
-Because these required checks remain unknown, the campaign may not be classified as `complete`.
+The artifact, visual, brand-package, source, and local-render work is finished. Completion cannot proceed through the available capabilities, so the correct state is `blocked`, not `complete`.
