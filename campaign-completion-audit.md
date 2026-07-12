@@ -71,3 +71,12 @@ All committed PDFs have valid PDF signatures. The workflow required exact page c
 3. A literal screenshot-based side-by-side comparison with the current official company webpage is unsupported in this environment.
 
 The artifact, visual, brand-package, source, and local-render work is finished. Completion cannot proceed through the available capabilities, so the correct state is `blocked`, not `complete`.
+
+## Interlock regression repair - 2026-07-12
+
+- Reproduced the reported `RECOVERING` and `OWNER ACTION` overlaps with bounding-box assertions.
+- Removed the redundant annotation that occupied the gate-04 region.
+- Made dynamic core-state typography responsive, contained, and layered above the signal track.
+- Re-ran all six routes at desktop, laptop, tablet, mobile, and reduced-motion settings.
+- Verified all four interlock states, scenario click/keyboard behavior, mobile navigation, document actions, reciprocal navigation, and console health.
+- Result: all available local render and interaction checks passed.

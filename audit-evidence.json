@@ -312,5 +312,49 @@
       "sha256": "8342e7cf3bbd8fb56c917180cb4fa57231510e7113c329f852f2c78453aa9549",
       "generated_on": "GitHub Actions from audited main source"
     }
+  },
+  "latest_regression_qa": {
+    "date": "2026-07-12",
+    "defect": "Reliability Interlock dynamic-state and OWNER ACTION text overlap",
+    "root_cause": "Fixed-position annotation shared the gate-04 region, while the longest dynamic state label exceeded the fixed core width.",
+    "repair": "Removed the redundant in-stage annotation and added responsive contained typography with explicit core clipping and stacking.",
+    "routes_tested": [
+      "index.html",
+      "resume.html",
+      "cover-letter.html",
+      "interview-brief.html",
+      "120-day-plan.html",
+      "reliability-contract.html"
+    ],
+    "viewports": [
+      "1440x900",
+      "1280x800",
+      "768x1024",
+      "390x844",
+      "1190x1354 reported regression viewport"
+    ],
+    "states_tested": [
+      "run",
+      "observe",
+      "hold",
+      "recover"
+    ],
+    "interaction_checks": [
+      "sequence state changes",
+      "scenario click",
+      "scenario keyboard navigation",
+      "mobile navigation"
+    ],
+    "quality_checks": [
+      "no horizontal page overflow",
+      "no console warnings or errors",
+      "no broken local images in test harness",
+      "no duplicate IDs",
+      "document brand header geometry",
+      "reciprocal document navigation",
+      "PDF and Print controls",
+      "reduced-motion behavior"
+    ],
+    "result": "passed in local Chromium render QA before commit"
   }
 }
