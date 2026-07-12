@@ -1,0 +1,57 @@
+name: Fetch Southern Glazer's brand assets
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fetch-sgws-brand-assets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-brand-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch official Southern Glazer's logo assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/brand
+          curl -L --fail --retry 3 --user-agent 'Mozilla/5.0 RoleForge candidate campaign' \
+            'https://www.southernglazers.com/content/dam/web/qa/southern-glazers-logo-secondary.svg' \
+            -o assets/brand/southern-glazers-logo-secondary.svg
+          curl -L --fail --retry 3 --user-agent 'Mozilla/5.0 RoleForge candidate campaign' \
+            'https://www.southernglazers.com/content/dam/web/qa/southern-glazers-logo-secondary-mobile.svg' \
+            -o assets/brand/southern-glazers-logo-secondary-mobile.svg
+          test -s assets/brand/southern-glazers-logo-secondary.svg
+          test -s assets/brand/southern-glazers-logo-secondary-mobile.svg
+          grep -qi '<svg' assets/brand/southern-glazers-logo-secondary.svg
+          grep -qi '<svg' assets/brand/southern-glazers-logo-secondary-mobile.svg
+          cat > assets/brand/PROVENANCE.md <<'EOF'
+          # Southern Glazer's Brand Asset Provenance
+
+          - `southern-glazers-logo-secondary.svg`
+            - Source: https://www.southernglazers.com/content/dam/web/qa/southern-glazers-logo-secondary.svg
+            - Provenance: official Southern Glazer's public website asset
+            - Use: nominative employer identification in an independent candidate campaign
+            - Handling: stored unchanged; no recoloring, tracing, cropping, animation, filters, or effects
+          - `southern-glazers-logo-secondary-mobile.svg`
+            - Source: https://www.southernglazers.com/content/dam/web/qa/southern-glazers-logo-secondary-mobile.svg
+            - Provenance: official Southern Glazer's public website compact asset
+            - Use: responsive nominative employer identification
+            - Handling: stored unchanged; no recoloring, tracing, cropping, animation, filters, or effects
+          EOF
+      - name: Commit fetched assets
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/brand
+          if git diff --cached --quiet; then
+            echo 'No asset changes to commit.'
+          else
+            git commit -m "Commit official Southern Glazer's brand assets"
+            git push
+          fi
