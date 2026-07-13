@@ -1,0 +1,158 @@
+name: Apply resume and cover contact information
+
+on:
+  push:
+    paths:
+      - 'contact-update.trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  apply-contact-information:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify regression test is red before implementation
+        shell: bash
+        run: |
+          set -euo pipefail
+          set +e
+          python3 tests/test_document_contact_info.py >/tmp/contact-red.log 2>&1
+          red_status=$?
+          set -e
+          test "$red_status" -ne 0
+          grep -F 'resume missing href="tel:+14122878640"' /tmp/contact-red.log
+
+      - name: Apply approved contact treatment
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          contact = '<div class="doc-meta contact-line"><span>Pittsburgh, Pennsylvania</span><a href="tel:+14122878640">412.287.8640</a><a href="mailto:russelldudek@gmail.com">russelldudek@gmail.com</a><a href="https://www.linkedin.com/in/russelldudek">linkedin.com/in/russelldudek</a><a href="https://russelldudek.github.io/Glazer/">russelldudek.github.io/Glazer/</a></div>'
+          contact_compact = contact.replace('class="doc-meta contact-line"', 'class="doc-meta contact-line contact-line-compact"')
+
+          resume_path = Path('resume.html')
+          resume = resume_path.read_text(encoding='utf-8')
+          old_resume_meta = '<div class="doc-meta">Pittsburgh, Pennsylvania | Candidate vision: index.html</div>'
+          if old_resume_meta not in resume:
+              raise SystemExit('resume page-one metadata anchor not found')
+          resume = resume.replace(old_resume_meta, contact, 1)
+          old_resume_page2 = '<div class="doc-kicker">Russell Dudek / continued</div><div class="doc-name" style="font-size:22pt">AI operating models, technical depth, and adjacent evidence</div><hr class="doc-rule"/>'
+          new_resume_page2 = '<div class="doc-kicker">Russell Dudek / continued</div><div class="doc-name" style="font-size:22pt">AI operating models, technical depth, and adjacent evidence</div>' + contact_compact + '<hr class="doc-rule"/>'
+          if old_resume_page2 not in resume:
+              raise SystemExit('resume page-two insertion anchor not found')
+          resume = resume.replace(old_resume_page2, new_resume_page2, 1)
+          resume_path.write_text(resume, encoding='utf-8')
+
+          cover_path = Path('cover-letter.html')
+          cover = cover_path.read_text(encoding='utf-8')
+          old_cover_meta = '<div class="doc-meta">Pittsburgh, Pennsylvania</div>'
+          if old_cover_meta not in cover:
+              raise SystemExit('cover metadata anchor not found')
+          cover = cover.replace(old_cover_meta, contact, 1)
+          old_thesis = '<p>My candidate thesis is a Model Reliability Contract: every production model should have explicit release evidence, live operating boundaries, named intervention rights, and a business-outcome owner. I have translated it into a Reliability Interlock, a 120-day entry plan, an interview thesis brief, and a practical one-page operating artifact.</p>'
+          new_thesis = '<p>My candidate thesis is a Model Reliability Contract: every production model should have explicit release evidence, live operating boundaries, named intervention rights, and a business-outcome owner. I have translated it into a Reliability Interlock, a 120-day entry plan, an interview thesis brief, and a practical one-page operating artifact. I developed a role-specific candidate vision at <a href="https://russelldudek.github.io/Glazer/">russelldudek.github.io/Glazer/</a> to demonstrate the Reliability Interlock, supporting operating model, and first-120-day approach.</p>'
+          if old_thesis not in cover:
+              raise SystemExit('cover thesis paragraph anchor not found')
+          cover = cover.replace(old_thesis, new_thesis, 1)
+          cover_path.write_text(cover, encoding='utf-8')
+
+          css_path = Path('documents.css')
+          css = css_path.read_text(encoding='utf-8')
+          if '.contact-line{display:flex;' not in css:
+              css += '\n.contact-line{display:flex;flex-wrap:wrap;align-items:center;gap:2px 8px;line-height:1.25}.contact-line>*{white-space:nowrap}.contact-line>*+*:before{content:"·";color:var(--brand-secondary);margin-right:8px;font-weight:900}.contact-line a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(165,30,47,.35)}.contact-line a:hover{color:var(--brand-primary);border-bottom-color:var(--brand-primary)}.contact-line-compact{margin-top:4px;font-size:7.3pt}.letter-body a{color:var(--brand-primary);text-decoration:underline;text-decoration-thickness:.7px;text-underline-offset:1.5px}@media print{.contact-line a,.letter-body a{color:inherit;text-decoration:none;border-bottom:0}}\n'
+          css_path.write_text(css, encoding='utf-8')
+          PY
+
+      - name: Verify regression test is green
+        run: python3 tests/test_document_contact_info.py
+
+      - name: Generate and validate PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! command -v pdfinfo >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y poppler-utils
+          fi
+          CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$CHROME"
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/contact-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for attempt in {1..20}; do
+            curl -fsS http://127.0.0.1:8765/resume.html >/dev/null && break
+            sleep 1
+          done
+          "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --no-pdf-header-footer --print-to-pdf="$PWD/docs/Russell-Dudek-SGWS-AIML-Resume.pdf" http://127.0.0.1:8765/resume.html
+          "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --no-pdf-header-footer --print-to-pdf="$PWD/docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf" http://127.0.0.1:8765/cover-letter.html
+          test "$(pdfinfo docs/Russell-Dudek-SGWS-AIML-Resume.pdf | awk '/^Pages:/ {print $2}')" = "2"
+          test "$(pdfinfo docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf | awk '/^Pages:/ {print $2}')" = "1"
+          pdftotext docs/Russell-Dudek-SGWS-AIML-Resume.pdf /tmp/resume.txt
+          pdftotext docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf /tmp/cover.txt
+          grep -F '412.287.8640' /tmp/resume.txt
+          grep -F 'russelldudek@gmail.com' /tmp/resume.txt
+          grep -F 'russelldudek.github.io/Glazer/' /tmp/resume.txt
+          grep -F '412.287.8640' /tmp/cover.txt
+          grep -F 'russelldudek.github.io/Glazer/' /tmp/cover.txt
+          grep -F 'I developed a role-specific candidate vision' /tmp/cover.txt
+
+      - name: Refresh PDF audit hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, subprocess
+          from pathlib import Path
+
+          evidence_path = Path('audit-evidence.json')
+          evidence = json.loads(evidence_path.read_text(encoding='utf-8'))
+          mapping = {
+              'resume': Path('docs/Russell-Dudek-SGWS-AIML-Resume.pdf'),
+              'cover_letter': Path('docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf'),
+          }
+          pdf_name_map = {
+              'resume': 'Russell-Dudek-SGWS-AIML-Resume.pdf',
+              'cover_letter': 'Russell-Dudek-SGWS-AIML-Cover-Letter.pdf',
+          }
+          for key, path in mapping.items():
+              data = path.read_bytes()
+              pages = int(next(line.split(':', 1)[1].strip() for line in subprocess.check_output(['pdfinfo', str(path)], text=True).splitlines() if line.startswith('Pages:')))
+              digest = hashlib.sha256(data).hexdigest()
+              evidence.setdefault('committed_pdfs', {})[key] = {
+                  'path': str(path),
+                  'pages': pages,
+                  'bytes': len(data),
+                  'sha256': digest,
+                  'generated_on': 'GitHub Actions from approved contact-information source'
+              }
+              evidence.setdefault('pdfs', {})[pdf_name_map[key]] = {
+                  'pages': pages,
+                  'sha256': digest,
+                  'bytes': len(data),
+                  'openable': True,
+                  'selectable_text': True
+              }
+          evidence_path.write_text(json.dumps(evidence, indent=2) + '\n', encoding='utf-8')
+          PY
+
+      - name: Commit approved contact update
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm -f contact-update.trigger .github/workflows/apply-contact-information.yml
+          git add resume.html cover-letter.html documents.css audit-evidence.json \
+            docs/Russell-Dudek-SGWS-AIML-Resume.pdf \
+            docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf
+          git commit -m 'Add contact details and candidate-site links to application documents'
+          git push origin main
