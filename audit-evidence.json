@@ -280,16 +280,16 @@
     "resume": {
       "path": "docs/Russell-Dudek-SGWS-AIML-Resume.pdf",
       "pages": 2,
-      "bytes": 121071,
-      "sha256": "3d5109ef1e2301374ab0ae653611ec068ce6f1e908f91c83aee0b75f240a5577",
-      "generated_on": "GitHub Actions from audited main source"
+      "bytes": 131720,
+      "sha256": "091aef99c9b8768fa47b72053f95945faf89fa60c678fe6082360f4338256e02",
+      "generated_on": "GitHub Actions from audited main source after approved contact/site update"
     },
     "cover_letter": {
       "path": "docs/Russell-Dudek-SGWS-AIML-Cover-Letter.pdf",
       "pages": 1,
-      "bytes": 49203,
-      "sha256": "665d1b5afc9bdb8c963aa363a99953d68c055392db7cbc4ecb414a9e352d5426",
-      "generated_on": "GitHub Actions from audited main source"
+      "bytes": 53488,
+      "sha256": "1dc586d14c780f56347db4c8e59b4b864c4a8b8b29cba79ea6976eb1079cf2cb",
+      "generated_on": "GitHub Actions from audited main source after approved contact/site update"
     },
     "interview_brief": {
       "path": "docs/Russell-Dudek-SGWS-AIML-Interview-Brief.pdf",
@@ -356,5 +356,20 @@
       "reduced-motion behavior"
     ],
     "result": "passed in local Chromium render QA before commit"
+  },
+  "contact_and_site_access": {
+    "approved_contact_line": "Pittsburgh, Pennsylvania \u00b7 412.287.8640 \u00b7 russelldudek@gmail.com \u00b7 linkedin.com/in/russelldudek \u00b7 russelldudek.github.io/Glazer/",
+    "resume_header": "passed source and PDF checks",
+    "resume_page_two_compact_header": "passed source and PDF checks",
+    "cover_letter_header": "passed source and PDF checks",
+    "cover_letter_body_site_reference": "passed source and PDF checks",
+    "active_links": [
+      "tel:+14122878640",
+      "mailto:russelldudek@gmail.com",
+      "https://www.linkedin.com/in/russelldudek",
+      "https://russelldudek.github.io/Glazer/"
+    ],
+    "resume_pdf_pages": 2,
+    "cover_letter_pdf_pages": 1
   }
 }
